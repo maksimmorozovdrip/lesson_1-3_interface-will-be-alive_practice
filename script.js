@@ -10,7 +10,9 @@ const labStatus = document.querySelector("#lab-status");
 // первую карточку. Потом переходите к заданию 02 в TASKS.md.
 const eventName = "Город в деталях";
 let clickCount = 0;
+const detailsTitle = document.querySelector("#details-title");
 firstCard.addEventListener("click", () => {
+  detailsTitle.textContent = eventName;
   clickCount = clickCount + 1;
   if (clickCount === 1) {
   labStatus.textContent = `Первое открытие: ${eventName}`;
