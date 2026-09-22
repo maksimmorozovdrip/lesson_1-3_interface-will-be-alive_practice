@@ -6,8 +6,7 @@
 const firstCard = document.querySelector('[data-event="talk"]');
 const labStatus = document.querySelector("#lab-status");
 
-// 01. Уберите /* и */ вокруг обработчика, сохраните файл и нажмите
-// первую карточку. Потом переходите к заданию 02 в TASKS.md.
+
 let clickCount = 0;
 const detailsTitle = document.querySelector("#details-title");
 const eventName = "Город в деталях";
@@ -24,13 +23,17 @@ const secondCard = document.querySelector('[data-event="workshop"]');
 secondCard.addEventListener("click", () => {
   const eventName = "Мастерская постеров";
 detailsTitle.textContent = eventName;
-  // Здесь измените detailsTitle.textContent.
 });
 
 const cards = document.querySelectorAll(".event-card");
 const eventCount = document.querySelector("#event-count");
 eventCount.textContent = cards.length;
 
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    labStatus.textContent = "Нажата карточка из программы";
+  });
+});
 
 
 
