@@ -27,6 +27,11 @@ detailsTitle.textContent = eventName;
   // Здесь измените detailsTitle.textContent.
 });
 
+const cards = document.querySelectorAll(".event-card");
+const eventCount = document.querySelector("#event-count");
+eventCount.textContent = cards.length;
+
+
 
 
 // 02–03. Вы будете постепенно менять обработчик выше: добавите
