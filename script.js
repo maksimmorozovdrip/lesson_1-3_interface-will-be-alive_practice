@@ -10,7 +10,7 @@ const labStatus = document.querySelector("#lab-status");
 // первую карточку. Потом переходите к заданию 02 в TASKS.md.
 
 firstCard.addEventListener("click", () => {
-  labStatus.textContent = "Клик сработал. JavaScript подключен!";
+  labStatus.textContent = "Открыта первая карточка";
 });
 
 
